@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #ffffff;
+        }
+        .form {
+            background: #d30000;
+            color: #ffffff;
+            display: flex;
+            width: 30%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+        .logo {
+            margin: 20px auto;
+        }
+        .singup {
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 25px;
+        }
+        .fullname {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 10px auto;
+            width: 60%;
+            
+        }
+        .email {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 10px auto;
+            width: 60%
+        }
+        .phonenumber {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 10px auto;
+            width: 60%
+        }
+        .birthday {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 10px auto;
+            width: 60%
+        }
+        .password {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 10px auto;
+            width: 60%
+        }
+        .markcheckbox {
+            display: flex;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 10px;   
+        }
+        .privcheckbox {
+            display: flex;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 10px;  
+        }
+        input[type=text], input[type=email], input[type=tel], input[type=date],input[type=checkbox] {
+            border-radius: 2px;
+            border: none;
+        }
+        input[type=password] {
+            display: flex;
+            border-radius: 2px;
+            border: none;
+            margin: 2px auto;
+            width: 100%
+        }
+        .cracc {
+            width: 60%;
+        }
+        .rst {
+            width: 60%;
+        }
+        input[type=submit], input[type=reset] {
+            border-radius: 2px;
+            border: 4px solid #ffffff;
+            background-color:#d30000;
+            color:#ffffff;
+            padding: 5px 20px;
+            margin: 15px auto;
+            width: 100%;
+            font-size: 14px 
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">  
+        <div class="logo"><img src="https://aaaa.in.ua/catalog/view/theme/notaboo/image/no-taboo-footer.png" alt="no-taboologo" ></div>
+        <div class="singup">
+            <p>Sign Up</p>
+        </div>
+        <section class="fullname">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" minlength="3" required>
+        </section>
+        <section class="email">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" required>
+        </section>
+        <section class="phonenumber">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="xxx xxx xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </section>
+        <section class="birthday">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" max="2004-09-30" required>
+        </section>
+        <section class="password">
+            <label for="psw">Password</label>
+            <input type="password" name="psw" minlength="9" maxlength="12" required>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" minlength="9" maxlength="12" required>
+        </section>
+        <div class="markcheckbox">
+            <input type="checkbox" id="marketing">
+            <label for="marketing">Sign up to get product updates, news, and other marketing communications.</label>
+        </div>
+        <div class="privcheckbox">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">I agree to the Terms and Privacy Policy.</label>
+        </div>
+        <div class="cracc">
+            <input type="submit" value="Create Account" >
+        </div>
+        <div class="rst">
+            <input type="reset" value="Reset">
+        </div>
+    
+    </form>
+</body>
+</html>
